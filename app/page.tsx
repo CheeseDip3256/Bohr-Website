@@ -7,6 +7,8 @@ export default function Home() {
       <CustomCursor />
       <div className="relative h-full w-full">
         <Background src="/6333333-hd_1920_1080_24fps.mp4" />
+
+     
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
           <h1 className="font-sans italic mb-8 text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl" style={{ letterSpacing: '-4px' }}>
             Bohr Systems
@@ -22,7 +24,7 @@ export default function Home() {
       <a
         href="YOUR_LINKEDIN_URL_HERE"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer"  
         className="fixed bottom-4 left-1/2 -translate-x-1/2 text-white mix-blend-difference z-50 hover:opacity-70 transition-opacity"
       >
         <svg data-testid="geist-icon" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" strokeLinejoin="round" style={{color: 'currentColor'}} viewBox="0 0 16 16">
