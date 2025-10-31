@@ -1,16 +1,28 @@
 import { Background } from "@/components/background";
-import { CustomCursor } from "@/components/custom-cursor";
 
 export default function Home() {
   return (
-    <main className="h-[100dvh] w-full cursor-none relative">
-      <CustomCursor />
+    <main className="h-[100dvh] w-full relative">
       <div className="relative h-full w-full">
         <Background src="/6333333-hd_1920_1080_24fps.mp4" />
 
+        {/* Vertical line - thicker */}
+        <div className="fixed left-[18.85%] top-0 bottom-0 w-[2px] bg-white z-50"></div>
+        
+        {/* Horizontal line - thicker */}
+        <div className="fixed left-0 top-1/3 right-0 h-[2px] bg-white z-40"></div>
+
+        {/* 4-pointed star at intersection - CSS only */}
+        <div className="fixed left-[18.85%] top-1/3 -translate-x-1/2 -translate-y-1/2 z-60">
+          <div className="relative w-12 h-12 flex items-center justify-center">
+            <div className="absolute inset-0 bg-[#d9dbe2]/40 rotate-45 rounded-[55%] blur-sm"></div>
+            <div className="absolute w-6 h-6 bg-[#d9dbe2] rotate-45 rounded-[45%]"></div>
+            <div className="absolute w-3 h-3 bg-white/90 rounded-full"></div>
+          </div>
+        </div>
      
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
-          <h1 className="font-sans italic mb-8 text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl" style={{ letterSpacing: '-4px' }}>
+          <h1 className="font-sans italic mb-8 text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl" style={{ letterSpacing: '-4px' }}>
             Bohr Systems
           </h1>
         </div>
