@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="h-[100dvh] w-full relative">
       <div className="relative h-full w-full">
-        <Background src="/background.jpg" />
+        <Background src="/6333333-hd_1920_1080_24fps.mp4" />
 
         {/* Vertical line - thicker */}
         <div className="fixed left-[18.85%] top-0 bottom-0 w-[2px] bg-white z-50"></div>
